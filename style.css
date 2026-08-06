@@ -1068,9 +1068,8 @@ section{
 .footer {
     padding:2rem 0;
 
-    background:var(--charcoal);
+    background:var(--gray-light);
 
-    color:var(--white);
 }
 
 .footer-container{
@@ -1080,19 +1079,30 @@ section{
     grid-template-columns:2fr repeat(4,1fr);
 
     gap:4rem;
-
-    padding-bottom:4rem;
-
-    border-bottom:1px solid rgba(255,255,255,.08);
+    margin-top: 4rem;
 
 }
 
+.footer-logo img {
+    width:100%;
+
+    height:auto;
+
+    margin-left: -50px;
+    margin-top: -100px;
+    margin-bottom: -20px;
+}
+
+.footer-tagline span {
+    color: var(--brown);
+    font-style: italic;    
+}
 
 .footer-brand p{
 
     margin-bottom:2rem;
 
-    color:rgba(255,255,255,.7);
+    color: var(--charcoal);
 
 }
 
@@ -1118,6 +1128,10 @@ section{
 
     border:1px solid rgba(255,255,255,.15);
 
+    color:var(--charcoal);
+
+    background: var(--dark-beige);
+
     border-radius:50%;
 
     transition:var(--transition);
@@ -1126,9 +1140,9 @@ section{
 
 .footer-social a:hover{
 
-    background:var(--bronze);
+    background:var(--beige);
 
-    border-color:var(--bronze);
+    border-color:var(--beige);
 
 }
 
@@ -1146,7 +1160,7 @@ section{
 
     margin-bottom:.8rem;
 
-    color:var(--white);
+    color:var(--charcoal);
 
     font-size:1.5rem;
 
@@ -1154,7 +1168,7 @@ section{
 
 .footer-links a{
 
-    color:rgba(255,255,255,.7);
+    color: var(--charcoal);
 
     transition:var(--transition-fast);
 
@@ -1162,7 +1176,7 @@ section{
 
 .footer-links a:hover{
 
-    color:var(--bronze);
+    color:var(--beige);
 
 }
 
@@ -1176,14 +1190,20 @@ section{
 
     text-align:center;
 
-    padding-top:2rem;
+    padding-top:1rem;
+
+    border-top:1px solid rgba(255,255,255,.08);
 
 }
 
 .footer-bottom p{
 
-    color:rgba(255,255,255,.55);
+    color: var(--charcoal);
 
     font-size:.9rem;
+
+    margin-top: 2rem;
+    margin-bottom: -1rem;
+
 
 }
