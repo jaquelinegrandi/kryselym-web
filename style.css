@@ -387,7 +387,8 @@ section{
 
 .logo img{
 
-    width:42px;
+    width:40px;
+    height: auto;
 
 }
 
