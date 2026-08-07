@@ -51,3 +51,36 @@ window.addEventListener("resize", () => {
     }
 
 });
+
+
+/*======================================
+        BOOKS SLIDER
+======================================*/
+
+const track = document.querySelector(".books-track");
+const prevBtn = document.querySelector(".slider-btn.prev");
+const nextBtn = document.querySelector(".slider-btn.next");
+
+if(track && prevBtn && nextBtn){
+
+    const scrollAmount = 320;
+
+    nextBtn.addEventListener("click", () => {
+
+        track.scrollBy({
+            left: scrollAmount,
+            behavior: "smooth"
+        });
+
+    });
+
+    prevBtn.addEventListener("click", () => {
+
+        track.scrollBy({
+            left: -scrollAmount,
+            behavior: "smooth"
+        });
+
+    });
+
+}
