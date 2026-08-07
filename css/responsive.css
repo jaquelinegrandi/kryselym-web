@@ -1,6 +1,4 @@
-/*=========================================
-        RESPONSIVE • ≤1200px
-=========================================*/
+/*RESPONSIVE • ≤1200px*/
 
 @media (max-width:1200px){
 
@@ -172,21 +170,18 @@
 
 
 
-
-
-
 /*======================================*
-            MOBILE
+            TABLET
 *======================================*/
 
-@media (max-width:575px){
+@media (max-width:991px){
 
     .container{
         width:94%;
     }
 
     section{
-        padding:4rem 0;
+        padding:6rem 0;
     }
 
     /*=========================
@@ -194,18 +189,33 @@
     =========================*/
 
     .header{
-        padding:1.2rem 0;
+        padding:1.5rem 0;
     }
 
-    .logo img{
-        width:38px;
+    .header .container{
+        justify-content:space-between;
+    }
+
+    .logo{
+        order:1;
     }
 
     .menu-toggle{
-        display:block;
+
+        display:flex;
+
+        align-items:center;
+
+        justify-content:center;
+
         font-size:2rem;
+
         color:var(--heading);
+
+        order:2;
+
         z-index:1100;
+
     }
 
     .menu-toggle.hide{
@@ -232,12 +242,269 @@
 
         top:0;
         right:0;
+        bottom:0;
+
+        width:320px;
+        height:100vh;
+
+        padding:2rem;
+
+        display:flex;
+
+        flex-direction:column;
+
+        gap:1.5rem;
+
+        background:var(--white);
+
+        transform:translateX(100%);
+
+        opacity:0;
+
+        visibility:hidden;
+
+        transition: 
+        transform .35s ease,
+        opacity .35s ease;
+
+        z-index:9999;
+
+        box-shadow:var(--shadow-lg);
+
+    }
+
+
+    .navbar.visible{
+
+        transform:translateX(0);
+
+        opacity:1;
+
+        visibility:visible;
+
+    }
+
+    .navbar.visible .close-menu{
+        display:block;
+    }
+
+    .navbar .logo{
+        display: visible;
+        margin-top: auto;
+        order: 9;
+
+        
+    }
+
+    .nav-left,
+    .nav-right{
+
+        width:100%;
+
+        display:flex;
+
+        flex-direction:column;
+
+        align-items:flex-start;
+
+        gap:0;
+
+        padding:0;
+
+    }
+
+    .nav-right{
+    order:5;
+
+    }
+    .nav-left {
+        margin-bottom: -1.5rem;
+    }
+
+    .nav-menu li{
+        width:100%;
+    }
+
+    .nav-menu li a{
+
+        display:block;
+
+        width:100%;
+
+        padding:1rem 0;
+
+        border-bottom:1px solid var(--border);
+
+    }
+
+    .nav-right li:last-child{
+
+        margin:1.5rem 0 0;
+
+        width:100%;
+
+    }
+
+    .nav-right li:last-child .btn-primary{
+
+        width:100%;
+
+        justify-content:center;
+        text-align: center;
+
+    }
+
+    /*=========================
+            HERO
+    =========================*/
+
+    .hero{
+        padding:10rem 0 6rem;
+    }
+
+    .hero-content{
+        max-width:700px;
+        margin:auto;
+    }
+
+    /*=========================
+            COLLECTIONS
+    =========================*/
+
+    .collection-grid{
+        grid-template-columns:repeat(2,1fr);
+    }
+
+    /*=========================
+            ABOUT
+    =========================*/
+
+    .about-container{
+        grid-template-columns:1fr;
+        gap:4rem;
+    }
+
+    /*=========================
+            BOOKS
+    =========================*/
+
+    .books-track{
+        gap:2rem;
+    }
+
+    /*=========================
+            AUTHORS
+    =========================*/
+
+    .authors-grid{
+        grid-template-columns:1fr;
+        gap:3rem;
+    }
+
+    .authors-image,
+    .theruma-image{
+        display:none;
+    }
+
+    /*=========================
+            BLOG
+    =========================*/
+
+    .newsletter-container{
+        flex-direction:column;
+        gap:2rem;
+        text-align:center;
+    }
+
+    .newsletter-form{
+        width:100%;
+    }
+
+    /*=========================
+            FOOTER
+    =========================*/
+
+    .footer-container{
+        grid-template-columns:repeat(2,1fr);
+        gap:3rem;
+    }
+
+}
+
+
+/*MOBILE*/
+
+@media (max-width:575px){
+
+    .container{
+        width:94%;
+    }
+
+    section{
+        padding:4rem 0;
+    }
+
+    /*=========================
+            NAVIGATION
+    =========================*/
+
+    .header{
+        padding:1.2rem 0;
+    }
+
+    .header .container{
+
+    justify-content:flex-start;
+
+    gap:1rem;
+
+}
+
+    .logo img{
+        width:38px;
+        order:2;
+
+        margin-inline:auto;
+    }
+
+    .menu-toggle{
+        display:block;
+        font-size:2rem;
+        color:var(--heading);
+        z-index:1100;
+        order: 1;
+    }
+
+    .menu-toggle.hide{
+        display:none;
+    }
+
+    .close-menu{
+
+        display:none;
+
+        align-self:flex-start;
+
+        margin-bottom:1.5rem;
+
+        font-size:1.8rem;
+
+        color:var(--heading);
+
+    }
+
+    .navbar{
+
+        position:fixed;
+
+        top:0;
+        right:0;
         inset:0 0 0 auto;
 
         width:290px;
         min-height:100vh;
 
-        padding:2rem 1.5rem;
+        padding:5rem 1.5rem;
 
         display:flex;
         flex-direction:column;
@@ -304,8 +571,6 @@
 
         letter-spacing:var(--letter-spacing);
 
-        color:var(--heading);
-
         border-bottom:1px solid var(--border);
 
     }
@@ -323,8 +588,11 @@
         width:100%;
 
         justify-content:center;
+        text-align: center;
 
     }
+
+    
 
     /*=========================
             HERO
