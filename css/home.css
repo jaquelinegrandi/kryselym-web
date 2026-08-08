@@ -463,7 +463,7 @@ section{
     align-items: center;
     justify-content: center;
 
-    background: url("images/hero.png");
+    background: url("/assets/images/hero.png");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
