@@ -1,0 +1,30 @@
+.collection-section {
+    position: relative;
+    width: 100%;
+    background: var(--off-white);
+}
+
+.nihara {
+    padding: 4rem 0 2.2rem;
+    border-bottom: 1px solid var(--border);
+}
+
+.nihara .section-heading {
+    width: min(92%, 1240px);
+    margin: 0 1.5rem;
+
+    display: flex;
+    align-items: flex-start;
+    gap: 1.2rem;
+}
+
+.nihara .section-heading > img {
+    width: 80px;
+    height: 80px;
+
+    object-fit: contain;
+}
+
+.nihara .section-heading h2 {
+    margin: 0 0 .35;
+}
