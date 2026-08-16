@@ -1,0 +1,171 @@
+/*HOME PAGE*/
+
+
+@media (max-width:1200px){
+
+    /* CONTAINER */
+
+    .container{
+
+        width:min(94%, var(--container-width));
+
+    }
+
+
+    /* VARIABLES */
+
+    :root{
+
+        --section-padding:7rem;
+
+        --section-padding-small:5rem;
+
+    }
+
+
+    /* HEADER */
+
+    .header{
+
+        padding:1.8rem 0;
+
+    }
+
+    .navbar{
+
+        max-width:820px;
+
+    }
+
+    .nav-left,
+    .nav-right{
+
+        gap:2rem;
+
+    }
+
+    .nav-left{
+
+        padding-right:2rem;
+
+    }
+
+    .nav-right{
+
+        padding-left:2rem;
+
+    }
+
+    .nav-left a,
+    .nav-right a{
+
+        letter-spacing:.18em;
+
+    }
+
+    .btn-primary{
+
+        padding:.85rem 1.6rem;
+
+    }
+
+
+    /* TYPOGRAPHY */
+
+    .section-title{
+
+        max-width:900px;
+
+    }
+
+    .section-description{
+
+        max-width:650px;
+
+    }
+
+
+    /* HERO */
+
+    .hero-content{
+
+        max-width:700px;
+
+    }
+
+    .hero-logo{
+
+        width:420px;
+
+    }
+
+
+    /* COLLECTIONS */
+
+    .collection-grid{
+
+        gap:2rem;
+
+    }
+
+    .collection-card{
+
+        padding:2.2rem;
+
+    }
+
+
+    /* ABOUT */
+
+    .about-container{
+
+        gap:4rem;
+
+    }
+
+
+    /* BOOKS */
+
+    .books-track{
+
+        gap:1.5rem;
+
+    }
+
+    .book-card{
+
+        min-width:240px;
+
+    }
+
+
+    /* AUTHORS */
+
+    .authors-grid{
+
+        gap:2rem;
+
+    }
+
+
+    /* JOURNAL */
+
+    .journal-container{
+
+        max-width:700px;
+
+    }
+
+
+    /* FOOTER */
+
+    .footer-container{
+
+        grid-template-columns:1.6fr repeat(4,1fr);
+
+        gap:3rem;
+
+    }
+
+}
+
