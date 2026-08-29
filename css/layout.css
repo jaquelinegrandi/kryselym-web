@@ -166,7 +166,19 @@
 
 }
 
-/*HERO*/
+/*MAIN*/
+
+.section-number {
+    display: block;
+
+    margin-bottom: var(--space-lg);
+    font-family: var(--font-body);
+
+    letter-spacing: var(--letter-spacing);
+    text-transform: uppercase;
+    color: var(--gold-dark);
+}
+
 
 
 

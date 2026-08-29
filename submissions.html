@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Submissions</title>
+
+    <meta name="description" content="Kryselum Editorial. Independant publishing for independant authors.">
+    <meta name="author" content="Kryselum Editorial">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+
+    <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/hero-global.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/submissions.css">
+
+
+    <link rel="stylesheet" href="css/responsive/phone.css">
+    <link rel="stylesheet" href="css/responsive/small-desktop.css">
+    <link rel="stylesheet" href="css/responsive/tablet.css">
+</head>
+<body>
+
+    <header class="header" id="header">
+        <div class="container">
+
+            <button class="menu-toggle" id="open-menu" aria-label="Open menu">
+                <i class="bi bi-list"></i>
+            </button>
+
+            <nav class="navbar" id="navbar">
+
+        
+                <button class="close-menu">
+                    <i class="bi bi-x-lg"></i>
+                </button>
+
+                <ul class="nav-menu nav-left">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="collections.html">Collections</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+
+                <a href="/" class="logo"><img src="assets/logos/k-logo-nbg.png" alt="kryselum logo"></a>
+
+                <ul class="nav-menu nav-right">
+                    <li><a href="authors.html">Authors</a></li>
+                    <li><a href="tools.html">Tools</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+
+                    <li>
+                        <a href="submissions.html" class="btn-primary">
+                        Submissions
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero-global">
+             <div class="hero-global-overlay"></div>
+
+            <div class="hero-global-content">
+                <h1>Submissions</h1>
+                <div class="divider"></div>
+
+                <h2>We'd love to read your work.</h2>
+                <p>If you believe your manuscript could be a good fit for Kryselum, we'd love to hear from you.</p>
+            </div>
+        </section>
+
+        <section class="submission-section">
+            <div class="submission-content">
+                <span class="section-number">
+                    Submit your manuscript
+                </span>
+
+                <h2>
+                    Tell us about<br>
+                    your book.
+                </h2>
+
+                <p>
+                    We are always interested in discovering new voices
+                    and considered, distinctive work.
+                </p>
+
+                 <p>
+                    Please read our submission guidelines
+                    before submitting.
+                </p>
+
+                <a href="#guidelines" class="tool-link">
+                    Read submission guidelines
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+
+                <div>
+                    <span class="submission-quote-symbol">✦</span>
+
+                    <blockquote>
+                        If there’s a book that you want to read,
+                        but it hasn’t been written yet,
+                        then you must write it.
+
+                    </blockquote>
+
+                    <cite>— Tori Morrison</cite>
+                </div>
+
+            </div>
+
+            <div class="submission-form-wrapper">
+                <form class="submission-form"
+                action="#"
+                method="post"
+                enctype="multipart/form-data">
+
+                    <div class="form-row">
+
+                        <div class="form-group">
+
+                            <label for="first-name">
+                                First name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="first-name"
+                                name="first-name"
+                                placeholder="Your first name"
+                                required>
+
+                        </div>
+
+                        <div class="form-group">
+
+                            <label for="last-name">
+                                Last name
+                            </label>
+
+                            <input
+                                type="text"
+                                id="last-name"
+                                name="last-name"
+                                placeholder="Your last name"
+                                required
+                            >
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="submission-email">
+                            Email address
+                        </label>
+
+                        <input
+                            type="email"
+                            id="submission-email"
+                            name="email"
+                            placeholder="you@example.com"
+                            required
+                        >
+                    </div>
+
+                    <div class="form-row">
+                        <div class="form-group">
+
+                            <label for="manuscript-title">
+                                Manuscript title
+                            </label>
+
+                            <input
+                                type="text"
+                                id="manuscript-title"
+                                name="manuscript-title"
+                                placeholder="Title of your manuscript"
+                                required
+                            >
+                        </div>
+
+                        <div class="form-group">
+                            <label for="genre">
+                                Genre
+                            </label>
+
+                            <select
+                                id="genre"
+                                name="genre"
+                                required>
+
+                                <option value="" selected disabled>
+                                    Select a genre
+                                </option>
+
+                                <option value="literary-fiction">
+                                    Literary fiction
+                                </option>
+
+                                <option value="fantasy">
+                                    Fantasy
+                                </option>
+
+                                <option value="historical-fiction">
+                                    Historical Fiction
+                                </option>
+
+                                <option value="science-fiction">
+                                    Science Fiction
+                                </option>
+
+                                <option value="christian-fiction">
+                                    Christian Fiction
+                                </option>
+
+                                <option value="theology-apologetics">
+                                    Faith & theology 
+                                </option>
+                            </select>
+
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="word-count">
+                            Word count (approx.)
+                        </label>
+
+                        <input
+                            type="number"
+                            id="word-count"
+                            name="word-count"
+                            placeholder="e.g. 80,000"
+                            min="1"
+                            required>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="book-description">
+                            Tell us about your book
+                        </label>
+
+                        <textarea
+                            id="book-description"
+                            name="book-description"
+                            rows="5"
+                            placeholder="A short summary of your book, its themes, and what makes it unique."
+                            required></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="author-bio">
+                            About the author
+                        </label>
+
+                        <textarea
+                            id="author-bio"
+                            name="author-bio"
+                            rows="5"
+                            placeholder="Tell us a little about yourself and your writing background."
+                            required></textarea>
+
+                    </div>
+
+                    <div class="form-group">
+
+                        <label for="manuscript">
+                            Upload your manuscript
+                        </label>
+
+                        <input
+                            type="file"
+                            id="manuscript"
+                            name="manuscript"
+                            accept=".pdf,.doc,.docx"
+                            required>
+
+                    </div>
+
+                    <div class="form-consent">
+                        <input
+                            type="checkbox"
+                            id="submission-consent"
+                            name="consent"
+                            required>
+
+                        <label for="submission-consent">
+
+                            I have read and agree to the
+                            <a href="#guidelines">
+                                submission guidelines
+                            </a>
+                            and
+                            <a href="privacy.html">
+                                privacy policy
+                            </a>.
+                        </label>
+                    </div>
+
+                    <button
+                        type="submit"
+                        class="contact-submit">
+
+                        Submit manuscript
+
+                        <i class="bi bi-arrow-right"></i>
+
+                    </button>
+                </form>
+            </div>
+        </section>
+
+        <section class="contact-submission" id="guidelines">
+
+            <div class="submission-content">
+                <span class="section-number">
+                    Before you submit
+                </span>
+
+                <h2>
+                    Please read our<br>
+                    submission guidelines.
+                </h2>
+
+                <p>
+                    Our Submission Guidelines explain what we publish,
+                    what we look for in a manuscript, the formats we accept,
+                    and how our submission process works.
+                </p>
+
+                <a
+                    href="assets/documents/submission-guidelines.pdf"
+                    class="tool-link"
+                    target="_blank">
+
+                    Read the full guidelines (PDF)
+
+                    <i class="bi bi-arrow-right"></i>
+
+                </a>
+
+                <div class="submission-image">
+                    <img src="assets/images/submission-guidelines.png" alt="Kryselum Submission Guidelines">
+                </div>
+
+            </div>
+        </section>
+
+        <section class="submission-process">
+            <div class="submission-process-header">
+
+                <span class="section-number">
+                    What happens next
+                </span>
+
+            </div>
+
+            <div class="process-grid">
+
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="bi bi-envelope"></i>
+                    </div>
+
+                    <span class="process-number">
+                        01.
+                    </span>
+
+                    <h3>
+                        We receive
+                    </h3>
+
+                    <p>
+                        We receive your submission
+                        and confirm by email.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="bi bi-book"></i>                    
+                    </div>
+
+                    <span class="process-number">
+                        02.
+                    </span>
+
+                    <h3>
+                        We review
+                    </h3>
+
+                    <p>
+                        Our editorial team carefully
+                        reviews your manuscript.
+                    </p>
+                </div>
+
+                <div class="process-item">
+                    <div class="process-icon">
+                        <i class="bi bi-stars"></i>                    
+                    </div>
+
+                    <span class="process-number">
+                        03.
+                    </span>
+
+                    <h3>
+                        We respond
+                    </h3>
+
+                    <p>
+                        If your work is a good fit,
+                        we’ll be in touch with next steps.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="submission-final">
+            <div class="submission-final-symbol">
+                ✦
+            </div>
+
+            <h2>
+                Every story deserves the chance to be read,<br>
+                remembered, and carried forward.
+            </h2>
+
+            <p>
+                Ready to share yours?
+            </p>
+
+            <a
+                href="#submission-form"
+                class="tool-link">
+
+                Submit your manuscript
+
+                <i class="bi bi-arrow-right"></i>
+
+            </a>
+
+        </section>
+    </main>
+
+    <footer class="footer" id="footer">
+
+        <div class="container">
+
+            <div class="footer-container">
+
+                <div class="footer-brand">
+
+                    <a href="/" class="footer-logo">
+                        <img src="assets/logos/full-logo-nbg.png" alt="Kryselum Editorial">
+                    </a>
+
+                    <p class="footer-tagline">
+                        Stories hidden.<br>
+                        <span>Truth revealed.</span>
+                    </p>
+
+                    <div class="footer-social">
+
+                        <a href="#"><i class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-tiktok"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                        <a href="#"><i class="bi bi-envelope"></i></a>
+
+                    </div>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h3>Collections</h3>
+
+                    <a href="#">Nihara</a>
+                    <a href="#">Nevarim</a>
+                    <a href="#">Elektos</a>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h3>Authors</h3>
+
+                    <a href="#">Submit a Manuscript</a>
+                    <a href="#">Theruma</a>
+                    <a href="#">Submission Guidelines</a>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h3>Company</h3>
+
+                    <a href="#">About Kryselum</a>
+                    <a href="#">Our Collections</a>
+                    <a href="#">Contact</a>
+
+                </div>
+
+                <div class="footer-links">
+
+                    <h3>Support</h3>
+
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies Policy</a>
+                    <a href="#">Terms of Use</a>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+
+                <p>
+                    ©2026 Kryselum Editorial. All rights reserved.
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <script src="main.js"></script>
+    
+</body>
+</html>
