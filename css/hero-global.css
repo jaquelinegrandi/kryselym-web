@@ -8,7 +8,7 @@
     align-items: center;
     justify-content: center;
 
-    background: url("https://jaquelinegrandi.github.io/kryselym-web/assets/images/hero.png");
+    background-image: url("../assets/images/hero.png");
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
