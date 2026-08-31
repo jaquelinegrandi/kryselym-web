@@ -184,7 +184,7 @@
     align-items: center;
     justify-content: center;
 
-    background: url("/assets/images/hero.png");
+    background: url("../assets/images/hero.png");
     background-position: center bottom;
     background-size: cover;
     background-repeat: no-repeat;
