@@ -185,6 +185,10 @@
     overflow: hidden;
 }
 
+#hero {
+    background: url("../assets/images/hero.png") center center / cover no-repeat !important;
+}
+
 .hero-overlay {
     position: absolute;
     inset: 0;
