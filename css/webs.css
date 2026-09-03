@@ -432,152 +432,168 @@
 
 /*PRICING*/
 
+
 .webs-pricing-section {
     padding-top: 5rem;
     padding-bottom: 4rem;
 }
 
+
 .webs-pricing-section .webs-section-heading-centered {
-    margin-bottom: 1rem;
+    margin-bottom: 2.8rem;
+    text-align: center;
 }
 
 
 .webs-pricing-section .webs-section-heading-centered h2 {
-    margin-bottom: var(--space-xl);
+    margin-bottom: .8rem;
 
     font-family: var(--font-heading);
-    font-size: 2.3rem;
+    font-size: clamp(2.2rem, 3vw, 3rem);
     font-weight: var(--fw-regular);
-    line-height: .4;
+    line-height: 1.1;
 
     color: var(--heading);
 }
 
 .webs-pricing-section .webs-section-heading-centered p {
-    max-width: 380px;
+    max-width: 500px;
     margin-inline: auto;
 
     font-family: var(--font-body);
-    font-size: .9rem;
+    font-size: .95rem;
     line-height: 1.6;
 
     color: var(--text);
 }
 
+
+
 .webs-pricing-flow {
     display: grid;
 
     grid-template-columns:
-        minmax(210px, 250px)
-        45px
-        minmax(450px, 1fr)
-        45px
-        minmax(180px, 220px);
+        minmax(250px, 300px)
+        52px
+        minmax(560px, 1fr)
+        52px
+        minmax(240px, 280px);
 
-    align-items: center;
+    align-items: stretch;
 
-    width: 100%;
-    max-width: 1180px;
-
+    width: min(100%, 1360px);
     margin-inline: auto;
 }
 
-.webs-pricing-card {
-    position: relative;
 
-    padding: 1.25rem 1.35rem;
+
+.webs-pricing-card {
+    min-width: 0;
+
+    padding: 1.8rem 1.7rem;
 
     background: var(--surface);
-
     border: 1px solid var(--border);
 
-    box-shadow: var(--shadow-sm);
+    box-shadow: none;
 }
 
+
+
 .webs-setup-card {
-    align-self: stretch;
+    display: flex;
+    flex-direction: column;
+
+    min-height: 500px;
 }
 
 .webs-pricing-label {
     display: block;
 
-    margin-bottom: .25rem;
+    margin-bottom: .65rem;
 
     font-family: var(--font-body);
-    font-size: var(--fs-base);
+    font-size: .78rem;
     font-weight: var(--fw-semibold);
 
+    letter-spacing: .14em;
     text-transform: uppercase;
-    letter-spacing: .13em;
 
     color: var(--gold-dark);
 }
+
+
 
 .webs-price {
     display: flex;
     align-items: baseline;
 
     color: var(--heading);
-
     font-family: var(--font-heading);
 }
 
 .webs-price .currency {
-    margin-right: .1rem;
+    margin-right: .12rem;
 
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-weight: 400;
 }
 
 .webs-price .amount {
-    font-size: 5rem;
-    font-weight: 500;
-    line-height: 1;
+    font-size: 4.3rem;
+    font-weight: var(--fw-regular);
+    line-height: .95;
 }
 
 .webs-price-small {
     display: block;
 
-    margin-top: .9rem;
+    margin-top: .55rem;
 
     font-family: var(--font-body);
-    font-size: .6rem;
+    font-size: .62rem;
     font-weight: var(--fw-medium);
 
+    letter-spacing: .1em;
     text-transform: uppercase;
-    letter-spacing: .08em;
 
     color: var(--gray-light);
 }
 
-.webs-pricing-card > p {
-    margin: .8rem 0;
 
+.webs-pricing-card > p {
+    max-width: 240px;
+
+    margin: 1.2rem 0 1.3rem;
+
+    font-family: var(--font-body);
     font-size: .9rem;
-    line-height: 1.5;
+    line-height: 1.55;
 
     color: var(--text);
 }
 
+
 .webs-pricing-card ul {
     display: flex;
     flex-direction: column;
+    gap: .42rem;
 
-    gap: .3rem;
+    margin: 0;
+    padding: 0;
 
-    margin-top: .75rem;
-    text-align: left;
+    list-style: none;
 }
 
 .webs-pricing-card li {
     display: flex;
     align-items: flex-start;
 
-    gap: .35rem;
+    gap: .45rem;
 
     font-family: var(--font-body);
-    font-size: var(--fs-base);
-    line-height: 1.35;
+    font-size: .88rem;
+    line-height: 1.4;
 
     color: var(--text);
 }
@@ -585,28 +601,71 @@
 .webs-pricing-card li i {
     flex-shrink: 0;
 
-    margin-top: .05rem;
+    margin-top: .15rem;
 
-    font-size: var(--fs-base);
+    font-size: .75rem;
 
     color: var(--gold-dark);
 }
 
+
+
+
+.btn- {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    gap: .5rem;
+
+    width: fit-content;
+
+    margin-top: auto;
+    margin-inline: auto;
+
+    padding-top: 1rem;
+
+    font-family: var(--font-body);
+    font-size: .82rem;
+    font-weight: var(--fw-medium);
+
+    text-transform: uppercase;
+    letter-spacing: .06em;
+
+    color: var(--gold-dark);
+
+    border-bottom: 1px solid var(--gold-dark);
+
+    transition:
+        gap var(--transition-fast),
+        color var(--transition-fast);
+}
+
+.btn- i {
+    font-size: .7rem;
+}
+
+.btn-:hover {
+    gap: .8rem;
+    color: var(--heading);
+    border-color: var(--heading);
+}
+
+
+
 .webs-pricing-symbol {
     display: flex;
-
     align-items: center;
     justify-content: center;
 }
 
 .webs-pricing-symbol span {
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    width: 45px;
-    height: 45px;
+    width: 44px;
+    height: 44px;
 
     border-radius: 50%;
 
@@ -615,110 +674,157 @@
     color: var(--white);
 
     font-family: var(--font-body);
-    font-size: 1.5rem;
+    font-size: 1.35rem;
+    font-weight: var(--fw-regular);
 }
+
+.webs-pricing-symbol i {
+    font-size: 1.1rem;
+}
+
+
 
 
 .webs-maintenance-wrapper {
+    display: flex;
+    flex-direction: column;
+
     min-width: 0;
 }
 
+
+/* HEADER OF MONTHLY */
+
 .webs-maintenance-heading {
-    margin-bottom: .5rem;
+    margin-bottom: 1.2rem;
 
     text-align: center;
 }
 
 .webs-maintenance-heading .webs-pricing-label {
-    margin-bottom: .15rem;
+    margin-bottom: .3rem;
+
+    font-size: .85rem;
 }
 
 .webs-maintenance-heading p {
+    margin: 0;
+
     font-family: var(--font-body);
-    font-size: var(--fs-base);
+    font-size: .9rem;
     line-height: 1.4;
 
     color: var(--text);
 }
 
+
+
 .webs-maintenance-options {
     display: grid;
 
-    grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr);
+    grid-template-columns: minmax(0, 1fr) 38px minmax(0, 1fr);
 
     align-items: stretch;
+
+    flex: 1;
 }
 
 .webs-maintenance-card {
     display: flex;
     flex-direction: column;
 
-    padding: 1.1rem 1rem;
+    min-width: 0;
+
+    padding: 1.45rem 1.2rem;
 
     background: var(--surface);
-
     border: 1px solid var(--border);
 }
+
+
+/* BASIC / CUSTOM */
 
 .webs-maintenance-type {
     display: block;
 
-    margin-bottom: .2rem;
+    margin-bottom: .45rem;
 
     font-family: var(--font-body);
-    font-size: var(--fs-base);
+    font-size: .78rem;
     font-weight: var(--fw-semibold);
 
+    letter-spacing: .14em;
     text-transform: uppercase;
-    letter-spacing: .12em;
 
     color: var(--gold-dark);
 }
 
+
+/* MONTHLY PRICE */
+
+.webs-maintenance-card .webs-price {
+    margin-bottom: .2rem;
+}
+
+.webs-maintenance-card .webs-price .currency {
+    font-size: 1.45rem;
+}
+
 .webs-maintenance-card .webs-price .amount {
-    font-size: 1.7rem;
+    font-size: 2.15rem;
 }
 
 .webs-maintenance-card .webs-price .per {
     margin-left: .15rem;
 
     font-family: var(--font-body);
-    font-size: var(--fs-large);
+    font-size: .9rem;
+    font-weight: var(--fw-regular);
 
     color: var(--text);
 }
 
+
+/* SMALL DESCRIPTION */
+
 .webs-maintenance-card .webs-price-small {
-    min-height: .7rem;
+    min-height: 1rem;
+
+    margin-top: .35rem;
 }
 
 
 .webs-maintenance-or {
     display: flex;
-
     align-items: center;
     justify-content: center;
+    height: 100%;
 }
 
 .webs-maintenance-or span {
-    font-family: var(--font-heading);
-    font-size: var(--fs-h3);
-    font-style: italic;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
-    width: 30px;
-    height: 30px;
+    width: 44px;
+    height: 44px;
 
-    background: var(--beige);
-    padding-bottom: 2rem;
     border-radius: 50%;
 
+    background: var(--beige);
     color: var(--charcoal);
+
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    font-style: italic;
+    line-height: 1;
+
+    padding: 0;
 }
 
 
 .webs-pricing-button {
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -727,19 +833,18 @@
     width: 100%;
 
     margin-top: auto;
-    padding: .55rem .6rem;
+    padding: .72rem .7rem;
 
     font-family: var(--font-body);
     font-size: .7rem;
     font-weight: var(--fw-semibold);
 
-    text-transform: uppercase;
     letter-spacing: .08em;
+    text-transform: uppercase;
 
     color: var(--white);
 
     background: var(--gold-dark);
-
     border: 1px solid var(--gold-dark);
 
     transition:
@@ -756,70 +861,73 @@
     gap: .7rem;
 
     color: var(--gold-dark);
-
     background: transparent;
 }
 
 
+
 .webs-pricing-growing {
-    align-self: stretch;
+    align-self: center;
 
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
     justify-content: center;
 
-    padding: 1.5rem 1rem;
+    width: 100%;
+    max-width: 220px;
+    min-height: 300px;
+
+    padding: 2rem 1.25rem;
 
     text-align: center;
 
     background: var(--light-beige);
-
     border: 1px solid var(--border);
 }
 
 .webs-growing-icon {
     display: flex;
-
     align-items: center;
     justify-content: center;
 
-    width: 50px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
 
-    margin-bottom: .7rem;
+    margin-bottom: 1rem;
 
     color: var(--gold-dark);
 
-    font-size: 2rem;
+    font-size: 1.8rem;
 }
 
 .webs-pricing-growing h3 {
-    margin-bottom: .6rem;
+    margin-bottom: .8rem;
 
     font-family: var(--font-heading);
-    font-size: 1.6rem;
-    font-weight: 500;
-
+    font-size: 1.65rem;
+    font-weight: var(--fw-regular);
     line-height: 1.15;
 
     color: var(--heading);
 }
 
 .webs-pricing-growing p {
-    max-width: 145px;
+    max-width: 180px;
 
-    font-size: var(--fs-base);
-    line-height: 1.5;
+    margin: 0;
+
+    font-family: var(--font-body);
+    font-size: .9rem;
+    line-height: 1.55;
 
     color: var(--text);
 }
 
+
+
 .webs-pricing-footer {
     display: flex;
-
     align-items: center;
     justify-content: center;
 
@@ -827,7 +935,7 @@
 
     max-width: 950px;
 
-    margin: 1rem auto 0;
+    margin: 1.3rem auto 0;
 
     text-align: center;
 }
@@ -849,4 +957,13 @@
     right: -1.35rem;
 
     color: var(--gold-dark);
+}
+
+
+
+/*WEBSITE OWNERSHIP*/
+
+.webs-ownership-section {
+    padding-top: 2rem;
+    padding-bottom: 5rem;
 }
