@@ -169,7 +169,8 @@
 
 /*HERO*/
 
-.hero {
+
+#hero {
     position: relative;
     min-height: 100vh;
 
@@ -183,11 +184,6 @@
     background-repeat: no-repeat;
     background-attachment: fixed;
     overflow: hidden;
-}
-
-#hero {
-    background: url("../assets/images/hero.png") center center / cover no-repeat !important;
-    background-attachment: fixed;
 }
 
 .hero-overlay {
