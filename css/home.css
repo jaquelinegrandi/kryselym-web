@@ -187,6 +187,7 @@
 
 #hero {
     background: url("../assets/images/hero.png") center center / cover no-repeat !important;
+    background-attachment: fixed;
 }
 
 .hero-overlay {
